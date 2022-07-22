@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans font-sans lg:overflow-x-hidden pb-5 h-screen bg-[#FAFAFA]">
+    <header class="flex flex-col justify-evenly items-center border-b-2 lg:h-12 md:h-12 xl:h-12 2xl:h-12 h-52  lg:flex-row xl:flex-row 2xl:flex-row md:flex-row  lg:justify-between xl:justify-between 2xl:justify-between md:justify-between">
+        <a href="#" class="logo flex flex-row  items-center">
+        <div class="bg-black rounded self-stretch flex  items-center mr-3 ml-3 p-1 ">
+            <svg width="18" height="13" viewBox="0 0 18 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4.29875 0.532776H8.56195L5.09561 6.52427L6.10261 8.45784L10.7216 0.532776H14.3739L17.8718 6.60484L14.3337 12.7748H10.0637L13.5952 6.66522L12.5277 4.86597L7.89508 12.7748H4.30322L0.806412 6.52373L4.29875 0.532776Z" fill="white"/>
+            </svg>
+        </div>
+        <div class="brand-name font-sans font-extrabold text-l pr-2 border-r-2">Movies</div>
+        </a>
+        <div class="search-box flex flex-row items-center border-l-2 pl-2  md:pr-10 xl:pr-10 lg:pr-10 2xl:pr-10">
+            <svg class="mr-2" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M10.6304 6.6538C10.6304 7.24474 10.514 7.82991 10.2878 8.37587C10.0617 8.92184 9.7302 9.41791 9.3124 9.8358C8.8945 10.2536 8.39844 10.5851 7.85247 10.8113C7.30651 11.0374 6.72134 11.1538 6.13039 11.1538C5.53944 11.1538 4.95429 11.0374 4.40832 10.8113C3.86236 10.5851 3.36628 10.2536 2.94842 9.8358C2.53055 9.41791 2.19908 8.92184 1.97293 8.37587C1.74678 7.82991 1.63039 7.24474 1.63039 6.6538C1.63039 5.46032 2.1045 4.31573 2.94842 3.47182C3.79233 2.6279 4.93691 2.1538 6.13039 2.1538C7.32386 2.1538 8.46845 2.6279 9.3124 3.47182C10.1563 4.31573 10.6304 5.46032 10.6304 6.6538ZM9.8104 11.3938C8.60477 12.3298 7.08776 12.7711 5.56819 12.6279C4.04862 12.4848 2.64074 11.7679 1.63115 10.6232C0.621545 9.47851 0.0861449 7.99209 0.133925 6.46655C0.181715 4.941 0.809095 3.491 1.88835 2.41175C2.9676 1.3325 4.41759 0.705122 5.94314 0.657332C7.46869 0.609549 8.9551 1.14495 10.0998 2.15455C11.2445 3.16414 11.9614 4.57203 12.1045 6.0916C12.2477 7.61116 11.8064 9.12817 10.8704 10.3338L13.9104 13.3738C13.9841 13.4425 14.0432 13.5253 14.0842 13.6173C14.1252 13.7093 14.1472 13.8086 14.149 13.9093C14.1508 14.01 14.1322 14.11 14.0945 14.2034C14.0568 14.2968 14.0006 14.3816 13.9294 14.4528C13.8582 14.5241 13.7734 14.5802 13.68 14.6179C13.5866 14.6556 13.4866 14.6742 13.3859 14.6724C13.2852 14.6706 13.1858 14.6486 13.0939 14.6076C13.0019 14.5666 12.9191 14.5075 12.8504 14.4338L9.8104 11.3938Z" fill="#1F2A33"/>
+                </svg><input type="text" class="h-full" id="search" name="search">
+        </div>
+        <button id="mobile-menu-button" class="block self-end mr-5 lg:hidden xl:hidden 2xl:hidden focus:outline-none focus:bg-gray-300 focus:rounded">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="black"  stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+        </button>
+    </header>
+    <section class="main-content flex flex-row justify-items-stretch items-stretch h-full bg-[#FAFAFA]">
+        <div class="left-info-box absolute min-w-fit h-full justify-self-stretch ml-0 border-[#D4DADF] border-r-2 bg-[#F5F7F9] pl-10 absolute inset-y-0 left-0 transform -translate-x-full transition duration-200 ease-in-out lg:-translate-x-0 xl:-translate-x-0 lg:relative xl:relative 2xl:-translate-x-0 2xl:relative">
+            <ul>
+                <li class="block mt-10 pl-5 pr-20 pt-3 pb-3 bg-[#FFFFFF] border-[##D4DADF] border-l-2 border-t-2 border-b-2">
+                    <a href="#">
+                        <span>Search Results</span>
+                    </a>
+                </li>
+                <li class="block  pl-5 pr-20 pt-3 pb-3 transition duration-200 hover:bg-[#FFFFFF] hover:text-slate-700">
+                    <a href="#">
+                        <span>All Team</span>
+                    </a>
+                </li>
+                <li class="block  pl-5 pr-20 pt-3 pb-3 transition duration-200 hover:bg-[#FFFFFF] hover:text-slate-700">
+                    <a href="#">
+                        <span>Core</span>
+                    </a>
+                </li>
+                <li class="block  pl-5 pr-20 pt-3 pb-3 transition duration-200 hover:bg-[#FFFFFF] hover:text-slate-700">
+                    <a href="#">
+                        <span>Developers</span>
+                    </a>
+                </li>
+                <li class="block  pl-5 pr-20 pt-3 pb-3 transition duration-200 hover:bg-[#FFFFFF] hover:text-slate-700">
+                    <a href="#">
+                        <span>Designers</span>
+                    </a>
+                </li>
+                <li class="block  pl-5 pr-20 pt-3 pb-3 transition duration-200 hover:bg-[#FFFFFF] hover:text-slate-700">
+                    <a href="#">
+                        <span>Mentors</span>
+                    </a>
+                </li>
+            </ul>
+
+            <a href="/tailwind.html" class="btn pl-10 pr-12 bg-black hover:bg-slate-700 text-white font-bold py-2 px-4 rounded hidden lg:block xl:block md:block 2xl:block transition-all ease-in-out delay-200 absolute bottom-12" >+ Contact</a>
+        </div>
+        <div class="card-wrapper w-full justify-self-stretch flex flex-col pb-10 justify-items-stretch" style="min-width:80vw;">
+           
+            <div class="flex flex-row justify-items-start flex-wrap lg:h-1/2 md:h-1/2 xl:h-1/2 2xl:h-1/2">            
+                <div class="card object-contain w-[200px] h-[285.05px] max-w-sm mx-auto bg-white  shadow-lg flex flex-col items-center justify-end mb-5 mt-5 lg:mt-2 xl:mt-2 2xl:mt-2 " >
+                   
+                    <div class="Type m-1 font-Roboto font-bold"></div>
+                    <div class="stars"></div>
+                    <h3 class="Title m-1 post font-bold text-lg  text-white"></h3>
+                </div>
+                <div class="card object-contain w-[200px] h-[285.05px] max-w-sm mx-auto bg-white  shadow-lg flex flex-col items-center justify-end  mb-5 mt-5 lg:mt-2 xl:mt-2 2xl:mt-2 " >
+                   
+                    <div class="Type m-1 font-Roboto font-bold"></div>
+                    <div class="stars"></div>
+                    <h3 class="Title m-1 post font-bold text-lg  text-white"></h3>
+                </div>
+                <div class="card object-contain w-[200px] h-[285.05px] max-w-sm mx-auto bg-white  shadow-lg flex flex-col items-center  justify-end  mb-5 mt-5 lg:mt-2 xl:mt-2 2xl:mt-2 " >
+                   
+                    <div class="Type m-1 font-Roboto font-bold"></div>
+                    <div class="stars"></div>
+                    <h3 class="Title m-1 post font-bold text-lg text-white"></h3>
+                </div>  
+            
+            </div>
+            <div class="flex flex-row justify-items-start flex-wrap lg:h-1/2 md:h-1/2 xl:h-1/2 2xl:h-1/2">            
+                <div class="card w-[200px] h-[285.05px] max-w-sm mx-auto bg-white  shadow-lg flex flex-col items-center justify-end mb-5 mt-5 lg:mt-2 xl:mt-2 2xl:mt-2 " >
+                   
+                    <div class="Type m-1 font-Roboto font-bold"></div>
+                    <div class="stars"></div>
+                    <h3 class="Title m-1 post font-bold text-lg  text-white"></h3>
+                </div>
+                <div class="card object-contain w-[200px] h-[285.05px] max-w-sm mx-auto bg-white  shadow-lg flex flex-col items-center justify-end  mb-5 mt-5 lg:mt-2 xl:mt-2 2xl:mt-2 " >
+                   
+                    <div class="Type m-1 font-Roboto font-bold"></div>
+                    <div class="stars"></div>
+                    <h3 class="Title m-1 post font-bold text-lg  text-white"></h3>
+                </div>
+                <div class="card object-contain w-[200px] h-[285.05px] max-w-sm mx-auto bg-white  shadow-lg flex flex-col items-center  justify-end  mb-5 mt-5 lg:mt-2 xl:mt-2 2xl:mt-2 " >
+                   
+                    <div class="Type m-1 font-Roboto font-bold"></div>
+                    <div class="stars"></div>
+                    <h3 class="Title m-1 post font-bold text-lg text-white"></h3>
+                </div>  
+            
+            </div>
+            <div class="flex flex-row justify-items-start flex-wrap lg:h-1/2 md:h-1/2 xl:h-1/2 2xl:h-1/2">            
+                <div class="card object-contain w-[200px] h-[285.05px] max-w-sm mx-auto bg-white  shadow-lg flex flex-col items-center justify-end mb-5 mt-5 lg:mt-2 xl:mt-2 2xl:mt-2 " >
+                   
+                    <div class="Type m-1 font-Roboto font-bold"></div>
+                    <div class="stars"></div>
+                    <h3 class="Title m-1 post font-bold text-lg  text-white"></h3>
+                </div>
+                <div class="card object-contain w-[200px] h-[285.05px] max-w-sm mx-auto bg-white  shadow-lg flex flex-col items-center justify-end  mb-5 mt-5 lg:mt-2 xl:mt-2 2xl:mt-2 " >
+                   
+                    <div class="Type m-1 font-Roboto font-bold"></div>
+                    <div class="stars"></div>
+                    <h3 class="Title m-1 post font-bold text-lg  text-white"></h3>
+                </div>
+                <div class="card object-contain w-[200px] h-[285.05px] max-w-sm mx-auto bg-white  shadow-lg flex flex-col items-center  justify-end  mb-5 mt-5 lg:mt-2 xl:mt-2 2xl:mt-2 " >
+                   
+                    <div class="Type m-1 font-Roboto font-bold"></div>
+                    <div class="stars"></div>
+                    <h3 class="Title m-1 post font-bold text-lg text-white"></h3>
+                </div>  
+            
+            </div>
+            <div class="flex flex-row justify-items-start flex-wrap lg:h-1/2 md:h-1/2 xl:h-1/2 2xl:h-1/2">            
+                <div class="card object-contain w-[200px] h-[285.05px] max-w-sm mx-auto bg-white  shadow-lg flex flex-col items-center justify-end mb-5 mt-5 lg:mt-2 xl:mt-2 2xl:mt-2 " >
+                   
+                    <div class="Type m-1 font-Roboto font-bold"></div>
+                    <div class="stars"></div>
+                    <h3 class="Title m-1 post font-bold text-lg  text-white"></h3>
+                </div>
+                <div class="card object-contain w-[200px] h-[285.05px] max-w-sm mx-auto bg-white  shadow-lg flex flex-col items-center justify-end  mb-5 mt-5 lg:mt-2 xl:mt-2 2xl:mt-2 " >
+                   
+                    <div class="Type m-1 font-Roboto font-bold"></div>
+                    <div class="stars"></div>
+                    <h3 class="Title m-1 post font-bold text-lg  text-white"></h3>
+                </div>
+                <div class="card object-contain w-[200px] h-[285.05px] max-w-sm mx-auto bg-white  shadow-lg flex flex-col items-center  justify-end  mb-5 mt-5 lg:mt-2 xl:mt-2 2xl:mt-2 " >
+                   
+                    <div class="Type m-1 font-Roboto font-bold"></div>
+                    <div class="stars"></div>
+                    <h3 class="Title m-1 post font-bold text-lg text-white"></h3>
+                </div>  
+            
+            </div>
+            <div class="flex flex-row justify-items-start flex-wrap lg:h-1/2 md:h-1/2 xl:h-1/2 2xl:h-1/2">            
+                <div class="card object-contain w-[200px] h-[285.05px] max-w-sm mx-auto bg-white  shadow-lg flex flex-col items-center justify-end mb-5 mt-5 lg:mt-2 xl:mt-2 2xl:mt-2 " >
+                   
+                    <div class="Type m-1 font-Roboto font-bold"></div>
+                    <div class="stars"></div>
+                    <h3 class="Title m-1 post font-bold text-lg  text-white"></h3>
+                </div>
+                <div class="card object-contain w-[200px] h-[285.05px] max-w-sm mx-auto bg-white  shadow-lg flex flex-col items-center justify-end  mb-5 mt-5 lg:mt-2 xl:mt-2 2xl:mt-2 " >
+                   
+                    <div class="Type m-1 font-Roboto font-bold"></div>
+                    <div class="stars"></div>
+                    <h3 class="Title m-1 post font-bold text-lg  text-white"></h3>
+                </div>
+                <div class="card object-contain w-[200px] h-[285.05px] max-w-sm mx-auto bg-white  shadow-lg flex flex-col items-center  justify-end  mb-5 mt-5 lg:mt-2 xl:mt-2 2xl:mt-2 " >
+                   
+                    <div class="Type m-1 font-Roboto font-bold"></div>
+                    <div class="stars"></div>
+                    <h3 class="Title m-1 post font-bold text-lg text-white"></h3>
+                </div>  
+            
+            </div>
+            <div class="flex flex-row justify-items-start flex-wrap lg:h-1/2 md:h-1/2 xl:h-1/2 2xl:h-1/2">            
+                <div class="card object-contain w-[200px] h-[285.05px] max-w-sm mx-auto bg-white  shadow-lg flex flex-col items-center justify-end mb-5 mt-5 lg:mt-2 xl:mt-2 2xl:mt-2 " >
+                   
+                    <div class="Type m-1 font-Roboto font-bold"></div>
+                    <div class="stars"></div>
+                    <h3 class="Title m-1 post font-bold text-lg  text-white"></h3>
+                </div>
+                <div class="card object-contain w-[200px] h-[285.05px] max-w-sm mx-auto bg-white  shadow-lg flex flex-col items-center justify-end  mb-5 mt-5 lg:mt-2 xl:mt-2 2xl:mt-2 " >
+                   
+                    <div class="Type m-1 font-Roboto font-bold"></div>
+                    <div class="stars"></div>
+                    <h3 class="Title m-1 post font-bold text-lg  text-white"></h3>
+                </div>
+                <div class="card object-contain w-[200px] h-[285.05px] max-w-sm mx-auto bg-white  shadow-lg flex flex-col items-center  justify-end  mb-5 mt-5 lg:mt-2 xl:mt-2 2xl:mt-2 " >
+                   
+                    <div class="Type m-1 font-Roboto font-bold"></div>
+                    <div class="stars"></div>
+                    <h3 class="Title m-1 post font-bold text-lg text-white"></h3>
+                </div>  
+            
+            </div>
+            <div class="flex flex-row justify-items-start flex-wrap lg:h-1/2 md:h-1/2 xl:h-1/2 2xl:h-1/2">            
+                <div class="card object-contain w-[200px] h-[285.05px] max-w-sm mx-auto bg-white  shadow-lg flex flex-col items-center justify-end mb-5 mt-5 lg:mt-2 xl:mt-2 2xl:mt-2 " >
+                   
+                    <div class="Type m-1 font-Roboto font-bold"></div>
+                    <div class="stars"></div>
+                    <h3 class="Title m-1 post font-bold text-lg  text-white"></h3>
+                </div>
+                <div class="card object-contain w-[200px] h-[285.05px] max-w-sm mx-auto bg-white  shadow-lg flex flex-col items-center justify-end  mb-5 mt-5 lg:mt-2 xl:mt-2 2xl:mt-2 " >
+                   
+                    <div class="Type m-1 font-Roboto font-bold"></div>
+                    <div class="stars"></div>
+                    <h3 class="Title m-1 post font-bold text-lg  text-white"></h3>
+                </div>
+                <div class="card object-contain w-[200px] h-[285.05px] opacity-0 max-w-sm mx-auto bg-white  shadow-lg flex flex-col items-center  justify-end  mb-5 mt-5 lg:mt-2 xl:mt-2 2xl:mt-2 " >
+                   
+                    <div class="Type m-1 font-Roboto font-bold"></div>
+                    <div class="stars"></div>
+                    <h3 class="Title m-1 post font-bold text-lg text-white"></h3>
+                </div>  
+            
+            </div>
+        </div>
+
+    </section>
+    <script>
+        const btn = document.getElementById("mobile-menu-button");
+        const sidebar = document.querySelector(".left-info-box");
+        const conBtn = document.querySelector(".btn");
+        btn.addEventListener("click", () => {
+            conBtn.classList.toggle('hidden');
+            sidebar.classList.toggle('-translate-x-full');
+        })
+    </script>
+    <script type="text/javascript" src="javaScript.js"></script>
+
+</body>
+</html>
