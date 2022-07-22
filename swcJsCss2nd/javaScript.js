@@ -65,7 +65,7 @@ function searchMovieInList(data, movieName){
       card[p].style.backgroundOrigin = "content-box"; 
       //console.log();
       movTitle[p].innerHTML = title;
-      i++;
+      p++;
       }
    }
    )
